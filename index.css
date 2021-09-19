@@ -1,0 +1,37 @@
+#clockContainer{  
+    position: relative;   /* WE USE RELATIVE POSITION SO HOUR, MIN, SEC HAND WILL GET RESPONSIVE */
+    margin: auto;         /* MARGIN IS AUTO SO IT TAKES US TO CENTER */
+    height: 40vw;         /* VW STANDS FOR VIEW WIDTH. IT HELPS TO BE RESPONSIVE CLOCK */
+    width: 40vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour, #minute, #second{
+    position: absolute;   /* THE POSITIONS OF HOUR, MIN, SEC IS ABSOLUTE AT CENTER OF THE CLOCK */
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom; /* TRANSFER ORIGIN IS BOTTOM MEANS IT WILL ROTATE FROM BOTTOM */
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  /* OPACITY IS JUST USED SO WE CAN SEE THESE HOURS, MIN, SEC HANDS SEPRATELY */
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
